@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mugilarasi M S — Cybersecurity Developer &amp; Fintech Innovator</title>
+<meta name="description" content="Portfolio of Mugilarasi M S — Cybersecurity Developer & Fintech Innovator specializing in encryption systems, AI assistants and offline-first fintech." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">MS<span class="dot">.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#work">Code</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#connect">Connect</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="https://github.com/Mugilarasi04" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-primary" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="badge reveal">
+      <span class="pulse"></span> OPEN TO OPPORTUNITIES
+    </div>
+
+    <h1 class="hero-title reveal">Mugilarasi M S</h1>
+    <h2 class="hero-sub reveal">Cybersecurity Developer &amp; Fintech Innovator</h2>
+    <p class="hero-desc reveal">
+      Security-driven developer specializing in <strong>encryption systems</strong> and
+      <strong>fintech innovation</strong>. Architect of ZeroNetPay — an offline UPI payment app
+      secured with HMAC-SHA256 and biometric authentication. Building privacy-first systems with
+      Python, FastAPI and applied cryptography.
+    </p>
+
+    <div class="hero-cta reveal">
+      <a href="#projects" class="btn btn-primary btn-lg">View Projects →</a>
+      <a href="assets/resume.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Download Resume ↓</a>
+    </div>
+
+    <div class="stat-bar reveal">
+      <div class="stat"><span>🏆</span> Dept. Project Expo — Winner '25</div>
+      <div class="stat"><span>🚀</span> HackIITK (C3iHub) — Top 24, IIT Kanpur</div>
+      <div class="stat"><span>📄</span> Published — ICECT 2026</div>
+      <div class="stat"><span>📍</span> Chennai, India</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <p class="eyebrow reveal">ABOUT</p>
+    <h2 class="section-title reveal">Who I am</h2>
+    <div class="about-grid">
+      <p class="about-text reveal">
+        I'm a final-year B.E. Computer Science &amp; Engineering student at
+        <strong>Velammal Engineering College, Chennai</strong> (CGPA 8.45, 2023–2027), focused on
+        cybersecurity, applied cryptography and fintech systems. My work spans multi-layer
+        encryption design, secure system architecture, and AI-driven assistants — with a research
+        paper on deception-based security published at ICECT 2026.
+      </p>
+      <div class="about-facts reveal">
+        <div class="fact"><span class="fact-label">Education</span><span>B.E. CSE, Velammal Engineering College</span></div>
+        <div class="fact"><span class="fact-label">CGPA</span><span>8.45 (2023 – 2027)</span></div>
+        <div class="fact"><span class="fact-label">Focus</span><span>Cryptography · AI Systems · Fintech</span></div>
+        <div class="fact"><span class="fact-label">Interests</span><span>Cybersecurity, Ethical Hacking, Quantum Encryption, F1, Music</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CODE / WORK ===== -->
+<section class="section section-alt" id="work">
+  <div class="container">
+    <p class="eyebrow reveal">HOW I BUILD</p>
+    <h2 class="section-title reveal">A peek at my code</h2>
+
+    <div class="code-panel reveal">
+      <div class="code-tabs" id="codeTabs">
+        <button class="code-tab active" data-target="tab-proteus">Proteus Encryption</button>
+        <button class="code-tab" data-target="tab-fadedrop">FadeDrop</button>
+        <button class="code-tab" data-target="tab-zeronetpay">ZeroNetPay</button>
+      </div>
+
+      <div class="code-window">
+        <div class="code-window-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        </div>
+
+        <pre class="code-block active" id="tab-proteus"><code><span class="c-com"># Proteus — multi-layer encryption with dynamic permutation</span>
+<span class="c-kw">def</span> <span class="c-fn">encrypt</span>(data: bytes, keys: list[bytes]) -&gt; bytes:
+    <span class="c-kw">for</span> key <span class="c-kw">in</span> keys:
+        data = dpg_permute(data, key)      <span class="c-com"># Dynamic Permutation Generation</span>
+        data = aead_seal(data, key)        <span class="c-com"># Authenticated encryption</span>
+    <span class="c-kw">return</span> honey_engine.wrap(data)      <span class="c-com"># deception-based decoys</span></code></pre>
+
+        <pre class="code-block" id="tab-fadedrop"><code><span class="c-com"># FadeDrop — zero-knowledge encrypted file sharing</span>
+<span class="c-kw">async def</span> <span class="c-fn">upload</span>(file: UploadFile, password: str):
+    key = derive_key(password)             <span class="c-com"># HKDF</span>
+    encrypted = fernet_encrypt(file, key)  <span class="c-com"># local, before upload</span>
+    token = issue_token(expiry=<span class="c-str">"24h"</span>)
+    <span class="c-kw">return</span> qr_code(token)               <span class="c-com"># single-use, password protected</span></code></pre>
+
+        <pre class="code-block" id="tab-zeronetpay"><code><span class="c-com"># ZeroNetPay — offline UPI token transfer</span>
+<span class="c-kw">def</span> <span class="c-fn">create_token</span>(amount: float, upi_id: str) -&gt; str:
+    payload = {<span class="c-str">"amount"</span>: amount, <span class="c-str">"upi_id"</span>: upi_id, <span class="c-str">"ts"</span>: now()}
+    signature = hmac_sha256(payload, device_key)
+    <span class="c-kw">return</span> qr_encode(payload, signature)  <span class="c-com"># scan-to-pay, no internet needed</span></code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section" id="experience">
+  <div class="container">
+    <p class="eyebrow reveal">EXPERIENCE</p>
+    <h2 class="section-title reveal">Where I've worked</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Dec 2023 – Jan 2025</div>
+        <div class="timeline-content">
+          <h3>Cybersecurity &amp; Development Intern</h3>
+          <p class="timeline-org">Insprisys &amp; MotionCut · Remote</p>
+          <p>Secure system architecture and full-stack integration for real-world cybersecurity projects. Implemented encryption and threat-mitigation strategies for data protection and secure user flows.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Dec 2025</div>
+        <div class="timeline-content">
+          <h3>Automation &amp; Testing Intern</h3>
+          <p class="timeline-org">Royal Enfield Headquarters · Onsite</p>
+          <p>Automated the cluster testing suite for Flying Flea (Royal Enfield's EV vehicle). Documented 30+ edge cases and implemented automated regression testing, reducing the bug detection cycle.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section section-alt" id="projects">
+  <div class="container">
+    <p class="eyebrow reveal">FEATURED PROJECTS</p>
+    <h2 class="section-title reveal">Things I've built</h2>
+
+    <div class="project-grid">
+
+      <article class="project-card reveal">
+        <div class="project-tag">Niral Hackathon · under review</div>
+        <h3>🛰️ ZeroNetPay</h3>
+        <p>Founder &amp; Lead Developer. Cross-platform offline UPI payment layer — send/receive money via QR scan with zero internet, using HMAC-SHA256 signed tokens and biometric authentication.</p>
+        <div class="project-stack"><span>Python</span><span>FastAPI</span><span>Kivy</span><span>HMAC-SHA256</span></div>
+        <a href="https://github.com/Mugilarasi04" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-tag">Published · ICECT 2026</div>
+        <h3>🔐 Proteus Encryption</h3>
+        <p>Multi-layer encryption system with Dynamic Permutation Generation, AEAD, quantum-derived keys and a deception-based Honey Engine.</p>
+        <div class="project-stack"><span>Python</span><span>Cryptography</span><span>HKDF</span></div>
+        <a href="https://github.com/Akshay-07-hash/Proteus--proto" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+      </article>
+
+      <article class="project-card reveal">
+        <h3>📤 FadeDrop</h3>
+        <p>Zero-knowledge encrypted file sharing. Hybrid AES/Fernet + RSA model, files encrypted locally before upload, QR-based access and expiry tokens.</p>
+        <div class="project-stack"><span>FastAPI</span><span>Python</span><span>HTML/CSS</span></div>
+        <a href="https://github.com/Mugilarasi04/Fadedrop-file" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+      </article>
+
+      <article class="project-card reveal">
+        <h3>🎙️ ENCOM Voice Assistant</h3>
+        <p>Always-listening AI assistant with a custom voice trigger, emergency dial system, smart safety timer, and a Jarvis-inspired interface.</p>
+        <div class="project-stack"><span>Python</span><span>Kivy</span></div>
+        <a href="https://github.com/Mugilarasi04/encom" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+      </article>
+
+      <article class="project-card reveal">
+        <h3>🏎️ F1 Race Predictor</h3>
+        <p>ML models trained on race history data to predict driver rankings and race outcomes, with feature scaling and performance visualization.</p>
+        <div class="project-stack"><span>Python</span><span>Scikit-Learn</span></div>
+        <a href="https://github.com/Mugilarasi04" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section" id="skills">
+  <div class="container">
+    <p class="eyebrow reveal">TOOLKIT</p>
+    <h2 class="section-title reveal">Things I work with</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal"><h4>Languages</h4><p>Python · JavaScript · HTML5 · CSS3 · SQL</p></div>
+      <div class="skill-card reveal"><h4>Backend</h4><p>FastAPI · Flask · Scikit-Learn · OpenCV</p></div>
+      <div class="skill-card reveal"><h4>Databases</h4><p>MySQL · MongoDB</p></div>
+      <div class="skill-card reveal"><h4>Tools</h4><p>Git · GitHub · VS Code</p></div>
+      <div class="skill-card reveal"><h4>CS Fundamentals</h4><p>DSA · OOP · DBMS · OS · CN</p></div>
+      <div class="skill-card reveal"><h4>Cryptography</h4><p>AES · RSA · HKDF · HMAC-SHA256</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACHIEVEMENTS ===== -->
+<section class="section section-alt" id="achievements">
+  <div class="container">
+    <p class="eyebrow reveal">HACKATHONS &amp; ACHIEVEMENTS</p>
+    <h2 class="section-title reveal">Recognition</h2>
+
+    <div class="achv-grid">
+      <div class="achv-card reveal">
+        <span class="achv-icon">🚀</span>
+        <h4>HackIITK (C3iHub)</h4>
+        <p>Top 24 teams — CTF Track, IIT Kanpur</p>
+      </div>
+      <div class="achv-card reveal">
+        <span class="achv-icon">🛰️</span>
+        <h4>Niral Hackathon</h4>
+        <p>ZeroNetPay — Founder &amp; Lead Developer <em>(under review)</em></p>
+      </div>
+      <div class="achv-card reveal">
+        <span class="achv-icon">🏆</span>
+        <h4>Department Project Expo</h4>
+        <p>Winner — 2025</p>
+      </div>
+      <div class="achv-card reveal">
+        <span class="achv-icon">🥉</span>
+        <h4>IGKO Zonal (SOF)</h4>
+        <p>3rd Place</p>
+      </div>
+      <div class="achv-card reveal">
+        <span class="achv-icon">📄</span>
+        <h4>Research Publication</h4>
+        <p>"Proteus Encryption System" — ICECT 2026 (ISBN 978-93-5737-886-4)</p>
+      </div>
+      <div class="achv-card reveal">
+        <span class="achv-icon">🎓</span>
+        <h4>Certifications</h4>
+        <p>NPTEL · Microsoft · Mastercard · Google · Goldman Sachs</p>
+      </div>
+    </div>
+
+    <div class="leadership-card reveal">
+      <div class="leadership-icon">🚩</div>
+      <div>
+        <h4>Technical Head — Youth Red Cross (YRC)</h4>
+        <p class="leadership-org">Velammal Engineering College</p>
+        <p>Contributed towards YRC services from <strong>2023–2026</strong>, supporting the society's technical initiatives and outreach programs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONNECT / LINKEDIN ===== -->
+<section class="section connect-section" id="connect">
+  <div class="container">
+    <p class="eyebrow reveal">CONNECT</p>
+    <h2 class="section-title reveal">Let's build something secure</h2>
+    <p class="connect-desc reveal">
+      Open to opportunities in cybersecurity, backend engineering and applied cryptography.
+      Latest updates and posts are on LinkedIn.
+    </p>
+
+    <div class="linkedin-panel reveal">
+      <div class="linkedin-panel-head">
+        <span class="li-icon">in</span>
+        <div>
+          <h4>Mugilarasi M S</h4>
+          <p>linkedin.com/in/mugilarasims04</p>
+        </div>
+        <a href="https://www.linkedin.com/in/mugilarasims04/" target="_blank" rel="noopener" class="btn btn-outline">Follow →</a>
+      </div>
+      <p class="linkedin-note">
+        Live post embeds aren't something a static site can pull automatically — LinkedIn doesn't
+        expose a public feed API. Open a post on LinkedIn, choose <em>"Embed this post"</em>, and
+        drop the snippet into <code>index.html</code> where marked below to feature specific posts.
+      </p>
+      <!-- FEATURED LINKEDIN POST EMBEDS — paste LinkedIn "Embed this post" snippets here -->
+      <div id="linkedin-embeds" class="linkedin-embeds"></div>
+    </div>
+
+    <div class="hero-cta reveal" style="margin-top:40px;">
+      <a href="https://github.com/Mugilarasi04" target="_blank" rel="noopener" class="btn btn-primary btn-lg">GitHub →</a>
+      <a href="mailto:mugilarasims@gmail.com" class="btn btn-outline btn-lg">Email me</a>
+      <a href="assets/resume.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Resume ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <a href="#top" class="nav-logo">MS<span class="dot">.</span></a>
+      <p>Cybersecurity Developer &amp; Fintech Innovator, building privacy-first systems from Chennai, India.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Site</h5>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#achievements">Achievements</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Connect</h5>
+      <a href="https://github.com/Mugilarasi04" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/mugilarasims04/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:mugilarasims@gmail.com">Email</a>
+      <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Mugilarasi M S. Built with care in Chennai, India.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
